@@ -9,81 +9,76 @@ h1 {
     margin-bottom: 50px;
 }
 
-div {
-    background-color: rgb(186, 188, 151);
-    border: 2px solid black;
+.sections {
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+}
+.sections > div {
+    background-color: rgb(186,188,151);
+    margin: 5px;
+    border: 2px solid black;
+}
+
+    .title1 {
+        font-weight: bold;
+        font-size: 1.1em;
+        float: right;
+        border: 2px solid black;
+        padding: 2px 20px 2px 20px;
+        border-top: 0;
+        border-right: 0;     
+        background-color: rgb(237, 135, 152);
+    }
+    .title2 {
+        font-weight: bold;
+        font-size: 1.1em;
+        float: right;
+        border: 2px solid black;
+        padding: 2px 20px 2px 20px;
+        border-top :0;
+        border-right: 0;
+        background-color: rgb(169, 15, 15);
+        color: aliceblue;
+    }
+    .title3 {
+        font-weight: bold;
+        font-size: 1.1em;
+        float: right;
+        border: 2px solid black;
+        padding: 2px 20px 2px 20px;
+        border-top: 0;
+        border-right: 0;
+        background-color: rgb(193, 193, 64);
+        color: rgb(91, 21, 21);
+    }
+
+    p {
+        clear: both;
+    }
     
+
+
+@media only screen and (max-width: 767px){
+    .sections{ 
+        flex-direction: column;
+    }
 }
 
-.title1 {
-    font-weight: bold;
-    font-size: 1.1em;
-    float: right;
-    border: 2px solid black;
-    padding: 2px 20px 2px 20px;
-    background-color: rgb(237, 135, 152);
-}
-.title2 {
-    font-weight: bold;
-    font-size: 1.1em;
-    float: right;
-    border: 2px solid black;
-    padding: 2px 20px 2px 20px;
-    background-color: rgb(169, 15, 15);
-    color: aliceblue;
-}
-.title3 {
-    font-weight: bold;
-    font-size: 1.1em;
-    float: right;
-    border: 2px solid black;
-    padding: 2px 20px 2px 20px;
-    background-color: rgb(193, 193, 64);
-    color: rgb(91, 21, 21);
-}
-
-p {
-    clear: both;
-}
-
-@media only screen and (min-width: 992px){
-    div {
-        margin-right: 0.5vw;
-        margin-left: 0.5vw;
-        height: 45.5vh;
+ @media only screen and (min-width: 768px) and (max-width: 991px){
+    .sections{
+        display: block;
     }
     .section1 {
-        float: left;
-        width: 32%;
+        width: 48.4%;
+        float:left;
     }
     .section2 {
-        float: left;
-        width: 32%;
+        width:48.4%;
+        float:left;
     }
     .section3 {
-        float: left;
-        width: 32%;
+        clear: both;
     }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    div {
-        margin-right:1.2vw;
-        margin-left: 1.2vw;
-        height: 41vh;
-    }
-    .section1 {
-        float: left;
-        width: 47%;
-    }
-    .section2 {
-        float: left;
-        width: 47%;
-    }
-    .section3 {
-        float: left;
-        height: 25vh;
-    }
-}
+    
+} 
